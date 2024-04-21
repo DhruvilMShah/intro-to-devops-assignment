@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven_3.23' 
+    }
 
     stages {
         stage('Hello') {
@@ -11,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building now ...'
                 withMaven {
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'
                 }
             }
         }
