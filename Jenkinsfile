@@ -14,7 +14,6 @@ pipeline {
             steps {
                 echo 'Building now ...'
                 bat 'mvn clean install'
-                }
             }
         }
     }
