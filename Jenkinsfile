@@ -7,5 +7,13 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('Build') {
+            steps {
+                echo 'Building now ...'
+                withMaven {
+                    sh 'mvn clean install'
+                }
+            }
+        }
     }
 }
