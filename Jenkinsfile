@@ -13,8 +13,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building now ...'
-                bat 'chdir javaProject'
-                bat 'mvn clean install'
+                dir('javaProject') {
+                    bat 'cd'
+                    bat 'mvn clean install'
+                }
             }
         }
     }
