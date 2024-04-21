@@ -15,7 +15,7 @@ pipeline {
                 echo 'Building now ...'
                 dir('javaProject') {
                     bat 'cd'
-                    bat 'mvn clean install'
+                    //bat 'mvn clean install'
                 }
             }
         }
