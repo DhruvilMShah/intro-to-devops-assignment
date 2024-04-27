@@ -12,8 +12,6 @@ public class App {
 		List<String> words = new ArrayList<>();
     	words.add("Hello");
     	words.add("World!");
-    	// This will throw a NoSuchMethodError when
-    	// executed in Java 8:
     	// List.of("Hello", "World!");
         words.forEach(System.out::println);
 	}
