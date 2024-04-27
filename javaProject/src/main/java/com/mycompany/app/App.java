@@ -11,8 +11,9 @@ public class App {
 	public static void main(String[] args) {
 		List<String> words = new ArrayList<>();
     	words.add("Hello");
-    	words.add("World!");
-    	// List.of("Hello", "World!");
+    	words.add("Kind!");
+		words.add("World!");
+    	// List.of("Hello", "Kind", "World!");
         words.forEach(System.out::println);
 	}
 }
